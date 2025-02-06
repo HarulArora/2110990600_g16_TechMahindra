@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Top Bar */
+
+.topbar {
+    background-color: white;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.lefttopbar {
+    position: absolute;
+    left: 0;
+    margin-left: 5rem;
+}
+
+#logoimage:hover{
+    transform: scale(1.1);
+}
+
+
+.righttopbar {
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+}
+
+#navbarbutton {
+    font-size: larger;
+    background-color: white;
+    border: 1px solid #fd53c0;
+    border-radius: 20rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fd53c0;
+}
+
+#navbarbutton:hover{
+    color: white;
+    background-color: #fd53c0;
+}
+
+
+
+
+
+/* First Page */
+
+
+.firstpage {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+#t1 {
+    font-size: 4rem;
+}
+
+.firstpagetext2 {
+    padding-top: 1.5rem;
+    max-width: 55rem;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+}
+
+.firstpagebutton {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+#firstbutton1 {
+    font-size: 1.5rem;
+    background-color: #fd53c0;
+    border-radius: 20rem;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 75px;
+    padding-right: 75px;
+    color: white;
+    border: none;
+
+}
+
+#firstbutton1:hover{
+    border: solid 1px #fd53c0;
+    color: #fd53c0;
+    background-color: white;
+}
+
+
+
+/* Second Page */
+
+
+
+.secondpage {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+}
+
+.secondpagetop {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+}
+
+.secondpagetopleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+}
+
+.crowdimage {
+    margin-left: 40%;
+}
+
+.crowdtext {
+    margin-left: 40%;
+    font-size: 3rem;
+}
+
+.communitytext {
+    margin-left: 40%;
+}
+
+.secondpagetopright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 40vh;
+}
+
+.messageimage {
+    margin-left: 40%;
+}
+
+.messagetext {
+    margin-left: 40%;
+    font-size: 3rem;
+}
+
+.messagesubtext {
+    margin-left: 40%;
+}
+
+
+/* Grow Together */
+.growtogether {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    background-color: #f6fbff;
+}
+
+.growtogethertext {
+    height: 70vh;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading {
+    font-size: 3.5rem;
+    margin-left: 20%;
+}
+
+#bodytext {
+    margin-left: 20%;
+    margin-right: 17%;
+}
+
+#imagegrowtogether {
+    width: 40vw;
+    margin-left: 15%;
+}
+
+.growtogetherimage {
+    height: 70vh;
+    width: 55vw;
+}
+
+
+
+/* Third Page */
+
+
+
+.thirdpage {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 240vh;
+}
+
+
+/* flowingconversation */
+
+.flowingconversation {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+.flowingconversationimage {
+    height: 70vh;
+    width: 55vw;
+}
+
+#imageflowingconversation {
+    width: 40vw;
+    margin-left: 15%;
+}
+
+.flowingconversationtext {
+    height: 70vh;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#headingflowing {
+    font-size: 3.5rem;
+    margin-left: 20%;
+}
+
+#bodytextflowing {
+    margin-left: 20%;
+    margin-right: 17%;
+}
+
+
+/* Your Users */
+
+.yourusers {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    background-color: #f6fbff;
+}
+
+.youruserstext {
+    height: 70vh;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#headingyourusers {
+    font-size: 3.5rem;
+    margin-left: 20%;
+}
+
+#bodytextyourusers {
+    margin-left: 20%;
+    margin-right: 17%;
+}
+
+#imageyourusers {
+    width: 40vw;
+    margin-left: 15%;
+}
+
+.yourusersimage {
+    height: 70vh;
+    width: 55vw;
+}
+
+/* third page bottom */
+
+#bottom-text{
+    font-size: 3rem;
+}
+
+
+.thirdpage-bottom{
+    height: 49vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#bottom-button {
+    font-size: 1.5rem;
+    background-color: #fd53c0;
+    border-radius: 20rem;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 75px;
+    padding-right: 75px;
+    color: white;
+    border: none;
+}
+
+#bottom-button:hover {
+    border: solid 1px #fd53c0;
+    color: #fd53c0;
+    background-color: white;
+}
+
+.bottom-button-wrapper{
+    margin-top: 3%;
+}
+
+#bottom-design{
+    width: 100vw;
+
+}
+
+
+
+/* Fourth page */
+.fourthpage{
+    width: 100vw;
+    height: 65vh;
+    background-color: #01262f;
+}
