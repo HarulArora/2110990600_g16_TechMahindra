@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: poppins;
+    font-weight: 700;
 }
-
-
 
 /* Top Bar */
 
@@ -23,7 +23,7 @@
     margin-left: 5rem;
 }
 
-#logoimage:hover{
+#logoimage:hover {
     transform: scale(1.1);
 }
 
@@ -46,7 +46,7 @@
     color: #fd53c0;
 }
 
-#navbarbutton:hover{
+#navbarbutton:hover {
     color: white;
     background-color: #fd53c0;
 }
@@ -101,7 +101,7 @@
 
 }
 
-#firstbutton1:hover{
+#firstbutton1:hover {
     border: solid 1px #fd53c0;
     color: #fd53c0;
     background-color: white;
@@ -292,12 +292,12 @@
 
 /* third page bottom */
 
-#bottom-text{
+#bottom-text {
     font-size: 3rem;
 }
 
 
-.thirdpage-bottom{
+.thirdpage-bottom {
     height: 49vh;
     width: 100vw;
     display: flex;
@@ -324,11 +324,11 @@
     background-color: white;
 }
 
-.bottom-button-wrapper{
+.bottom-button-wrapper {
     margin-top: 3%;
 }
 
-#bottom-design{
+#bottom-design {
     width: 100vw;
 
 }
@@ -336,8 +336,93 @@
 
 
 /* Fourth page */
-.fourthpage{
+.footer {
     width: 100vw;
     height: 65vh;
-    background-color: #01262f;
+    background-color: #00252e;
+    display: flex;
+}
+
+.left-footer {
+    width: 50vw;
+    height: 65vh;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;    
+}
+
+.left-footer-logo {
+    display: flex;
+    height: 5vh;
+    padding-left: 25%;
+    align-items: center;
+    margin-bottom: 20px;
+}  
+.left-footer-logo-image{
+    margin-right: 1%;
+}
+
+
+.left-footer-text {
+
+    padding-left: 25%;
+    margin-bottom: 20px;
+}
+
+
+.left-footer-phonenumber {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+}
+
+
+.left-footer-email {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    margin-bottom: 50px;
+}
+
+.left-footer-socials {
+    display: flex;
+    align-items: center;
+    padding-left: 24.5%;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 250px;
+    margin-top: 135px;
+    color: white;
+}
+
+.footer-right input {
+    width: 280px;
+    padding: 11px;
+    border: none;
+    background-color: none;
+    border-radius: 5px;
+}
+
+.footer-right-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-right button {
+    padding: 11px 30px;
+    background-color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
 }
