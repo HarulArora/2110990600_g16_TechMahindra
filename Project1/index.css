@@ -61,7 +61,7 @@
 .firstpage {
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    height: 135vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +70,10 @@
 
 #t1 {
     font-size: 4rem;
+}
+
+.firstpagetext1 {
+    text-align: center;
 }
 
 .firstpagetext2 {
@@ -154,16 +158,16 @@
 }
 
 .messageimage {
-    margin-left: 40%;
+    margin-left: 27%;
 }
 
 .messagetext {
-    margin-left: 40%;
+    margin-left: 27%;
     font-size: 3rem;
 }
 
 .messagesubtext {
-    margin-left: 40%;
+    margin-left: 27%;
 }
 
 
@@ -188,10 +192,12 @@
     margin-left: 20%;
 }
 
-#bodytext {
+#bodytext1 {
     margin-left: 20%;
     margin-right: 17%;
+    font-size: 1.3rem;
 }
+
 
 #imagegrowtogether {
     width: 40vw;
@@ -240,6 +246,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 }
 
 #headingflowing {
@@ -250,6 +257,7 @@
 #bodytextflowing {
     margin-left: 20%;
     margin-right: 17%;
+    font-size: 1.3rem;
 }
 
 
@@ -278,6 +286,7 @@
 #bodytextyourusers {
     margin-left: 20%;
     margin-right: 17%;
+    font-size: 1.3rem;
 }
 
 #imageyourusers {
@@ -349,7 +358,7 @@
     color: white;
     justify-content: center;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .left-footer-logo {
@@ -358,8 +367,9 @@
     padding-left: 25%;
     align-items: center;
     margin-bottom: 20px;
-}  
-.left-footer-logo-image{
+}
+
+.left-footer-logo-image {
     margin-right: 1%;
 }
 
@@ -393,36 +403,107 @@
     padding-left: 24.5%;
 }
 
-.footer-right {
+
+
+
+
+
+.right-footer {
+    width: 50vw;
+    height: 65vh;
+    color: white;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-left: 250px;
-    margin-top: 135px;
-    color: white;
+    padding-top: 8rem;
 }
 
-.footer-right input {
-    width: 280px;
-    padding: 11px;
+.right-footer-heading {
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 28.6%;
+}
+
+.right-footer-body {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-footer-input {
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-field {
+    margin-right: 1rem;
+}
+
+.input-field-text {
+    width: 14.5vw;
+    padding: 0.7rem;
     border: none;
     background-color: none;
     border-radius: 5px;
 }
 
-.footer-right-container {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.footer-right button {
-    padding: 11px 30px;
+.input-field-button {
+    padding: 0.7rem 1.2rem;
     background-color: hsl(322, 100%, 66%);
     border: 1px solid hsl(322, 100%, 66%);
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
     box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
-    margin-left: 1rem;
 }
+
+
+@media screen and (max-width: 1700px) {
+    #t1 {
+        font-size: 3.5rem;
+    }
+
+    .firstpagetext2 {
+        font-size: 15px;
+    }
+
+    #firstbutton1 {
+        font-size: 1.2rem;
+        background-color: #fd53c0;
+        border-radius: 20rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+    #heading {
+        font-size: 2.9rem;
+    }
+
+    #bodytext1 {
+        font-size: 1.2rem;
+    }
+
+    #headingflowing {
+        font-size: 2.9rem;
+
+    }
+
+
+    #bodytextflowing {
+        font-size: 1.2rem;
+    }
+
+
+    #headingyourusers {
+        font-size: 2.9rem;
+
+    }
+
+    #bodytextyourusers {
+        font-size: 1.2rem;
+    }
+}
+
