@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Nav */
@@ -161,22 +162,157 @@
 
 
 
-/* Second page */
+/* About page */
 
 
-.secondpage {
+.about-page {
     height: 100vh;
     width: 100vw;
     display: flex;
 }
 
-.lefthalf {
+.about-left-half {
     height: 100vh;
     width: 50vw;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12%;
 }
 
-.righthalf {
+#about-main-heading-1 {
+    color: white;
+    margin-bottom: 15px;
+    padding-left: 20%;
+    font-size: 3rem;
+}
+
+#about-main-heading-2 {
+    color: white;
+    margin-bottom: 15px;
+    padding-left: 20%;
+    font-size: 3rem;
+}
+
+#about-my-name {
+    color: #d9444a;
+}
+
+/* Typing effect CSS */
+
+.container {
+    display: flex;
+    margin-bottom: 15px;
+    padding-left: 20%;
+    height: 6vh;
+}
+
+#text {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 11px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Social Media */
+
+.card {
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.about-right-half {
     height: 100vh;
     width: 50vw;
     background-color: white;
