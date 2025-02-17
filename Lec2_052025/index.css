@@ -5,6 +5,11 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 /* Nav */
 
 .navbar {
@@ -768,12 +773,11 @@
 
 /* Skills Page */
 
-.skills-page{
+.skills-page {
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     /* background-color: red; */
     padding-top: 5%;
-    /* border: 1px silver solid; */
 }
 
 
@@ -784,6 +788,7 @@
     text-align: left;
     padding-left: 30%;
     padding-right: 30%;
+    padding-top: 5%;
 }
 
 h2 {
@@ -849,4 +854,195 @@ p {
 /* Hidden Section */
 .hidden {
     display: none;
+}
+
+
+
+/* Project Page */
+
+
+.projects-page {
+    width: 100vw;
+    height: 180vh;
+    background-color: black;
+}
+
+#projects {
+    color: white;
+    padding-top: 40px;
+}
+
+#my-project-heading {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 4%;
+    margin-left: 3.6%;
+
+}
+
+.half-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.half-underline::after {
+    content: '';
+    position: absolute;
+    left: 26%;
+    bottom: -5px;
+    width: 50%;
+    height: 5px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(67, 67, 67, 0.1);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(65, 64, 64, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #252424;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+
+/* Footer Page CSS */
+
+
+
+.unique-footer {
+    z-index: 1;
+    --footer-background: #d9444a;
+    display: grid;
+    position: relative;
+    grid-area: unique-footer;
+    min-height: 12rem;
+    background: var(--footer-background);
+}
+
+.unique-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#unique-blob");
+}
+
+.unique-bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    animation: unique-bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+        unique-bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+}
+
+.unique-content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    background: var(--footer-background);
+}
+
+.unique-content a,
+.unique-content p {
+    color: #F5F7FA;
+    text-decoration: none;
+}
+
+.unique-content b {
+    color: white;
+}
+
+.unique-content p {
+    margin: 0;
+    font-size: .75rem;
+}
+
+.unique-content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unique-content .unique-image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes unique-bubble-size {
+
+    0%,
+    75% {
+        width: var(--size, 4rem);
+        height: var(--size, 4rem);
+    }
+
+    100% {
+        width: 0rem;
+        height: 0rem;
+    }
+}
+
+@keyframes unique-bubble-move {
+    0% {
+        bottom: -4rem;
+    }
+
+    100% {
+        bottom: var(--distance, 10rem);
+    }
 }
